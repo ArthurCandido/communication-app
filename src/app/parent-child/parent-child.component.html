@@ -1,0 +1,18 @@
+<div>
+    <button mat-button color="primary" (click)=" stopWatch.start()">Start</button>
+    <button mat-button color="accent" (click)=" stopWatch.stop">Stop</button>
+    <button mat-button color="warn" (click)=" stopWatch.clear()">Clear</button>
+
+</div>
+
+<app-timer #stopWatch></app-timer>
+
+<div>
+    <button mat-button color="primary" (click)=" start() ">Start</button>
+    <button mat-button color="accent" (click)="stop()">Stop</button>
+    <button mat-button color="warn" (click)="clear() ">Clear</button>
+
+</div>
+
+<p #myP>São Paulo x Ceara</p>
+

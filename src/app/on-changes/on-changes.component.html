@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-content>
+        <section>
+            <mat-form-field>
+                <input matInput placeholder="Your name" [(ngModel)]="name ">
+                <button mat-icon-button color="primary" (click)="updateName()">
+                    <mat-icon>check</mat-icon>
+
+                </button>
+            </mat-form-field>
+        </section>
+
+        <section>
+            <app-name-changes [name]="newName"></app-name-changes>
+        </section>
+    </mat-card-content>
+</mat-card>
